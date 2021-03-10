@@ -13,12 +13,8 @@ const uniqueArray = (arr) => [...new Set(arr)];
 const doesOwnerHaveCars = (mergedObject, owner) => {
   const currentOwnersWithSameCar =
     Object.entries(mergedObject)
-      .filter(([, value]) => {
-        return value.owner === owner && !!value.cars;
-      })
-      .map(([, value]) => {
-        return value.cars;
-      })
+      .filter(([, value]) => value.owner === owner && !!value.cars)
+      .map(([, value]) => value.cars)
       .flat() || [];
 
   return uniqueArray(currentOwnersWithSameCar);
