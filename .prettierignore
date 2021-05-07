@@ -1,0 +1,10 @@
+package-lock.json
+package.json
+.eslintrc
+
+CHANGES.md
+
+dist/
+coverage/
+build/
+public/
