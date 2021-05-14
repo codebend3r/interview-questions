@@ -6,28 +6,28 @@
 
 const zoo = [
   {
-    name: "lion",
+    name: 'lion',
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   {
-    name: "giraffe",
+    name: 'giraffe',
     makesNoise: null,
   },
   {
-    name: "snake",
+    name: 'snake',
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
   {
-    name: "monkey",
+    name: 'monkey',
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
-];
+]
 
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
@@ -39,5 +39,14 @@ const zoo = [
 // Q1
 // loop through the {zoo} array and console log out the value of the {name} property
 
+zoo.forEach(({ name }) =>
+  console.log('found you ' + name + ". Now you're dead meat")
+)
+
 // Q2
 // loop through the {zoo} array and console log the value of the {makeNoise} function IF IT EXISTS
+zoo.forEach(({ makesNoise }) =>
+  typeof makesNoise === 'function'
+    ? console.log(makesNoise())
+    : console.log('not a function')
+)
