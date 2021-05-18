@@ -45,8 +45,4 @@ zoo.forEach(({ name }) =>
 
 // Q2
 // loop through the {zoo} array and console log the value of the {makeNoise} function IF IT EXISTS
-zoo.forEach(({ makesNoise }) =>
-  typeof makesNoise === 'function'
-    ? console.log(makesNoise())
-    : console.log('not a function')
-)
+zoo.forEach(({ makesNoise }) => typeof makesNoise === 'function' && makeNoise())

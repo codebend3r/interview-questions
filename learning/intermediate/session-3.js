@@ -4,7 +4,7 @@
 const animals = {
   lion: {
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   giraffe: {
@@ -12,44 +12,46 @@ const animals = {
   },
   monkey: {
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
   snake: {
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
-};
+}
 
 // Q1. convert the zoo object to an array, it should look like this
 // HINT: https://reactgo.com/convert-object-to-array-javascript/
 
-const convertObjectToArray = (obj) => {};
+const convertObjectToArray = (obj) => {
+  // FILL IN FUNCTION
+}
 
-console.log(convertObjectToArray(animals));
+console.log(convertObjectToArray(animals))
 
 const convertedAnimalsArray = [
   {
-    name: "lion",
+    name: 'lion',
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   {
-    name: "giraffe",
+    name: 'giraffe',
     makesNoise: null,
   },
   {
-    name: "snake",
+    name: 'snake',
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
   {
-    name: "monkey",
+    name: 'monkey',
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
-];
+]

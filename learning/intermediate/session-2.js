@@ -33,19 +33,22 @@ console.log(zoo.animals.lion.makesNoise())
 
 // Q2
 // make a function that takes in an animal object (lion, giraffe, monkey, snake)
-// and checks the {makeNoise} function
+// and checks to see if the {makeNoise} function exists and IS a function
+// ELSE call the default noise function {defaultMakeNoise}
 
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 // Please type out the code below.
 
-const doesAnimalMakeNoise = (a) => {
-  typeof a.makesNoise !== 'function'
-    ? console.log(a.makeNoise)
-    : console.log(a.makesNoise())
+const doesAnimalMakeNoise = ({ makesNoise }) => {
+  typeof makesNoise !== 'function'
+    ? console.log(makeNoise)
+    : console.log(makesNoise())
 }
 
-doesAnimalMakeNoise(zoo.animals.lion) // should return TRUE
-doesAnimalMakeNoise(zoo.animals.giraffe) // should return FALSE
-doesAnimalMakeNoise(zoo.animals.monkey) // should return TRUE
-doesAnimalMakeNoise(zoo.animals.snake) // should return TRUE
+const { lion, giraffe, monkey, snake } = zoo.animals
+
+doesAnimalMakeNoise(lion) // should return 'ROAR'
+doesAnimalMakeNoise(giraffe) // should return 'squeeeek'
+doesAnimalMakeNoise(monkey) // should return 'EEE EEE EEE'
+doesAnimalMakeNoise(snake) // should return 'SSSSSSSS'
