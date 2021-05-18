@@ -1,5 +1,28 @@
+// import zoo from './session-1.js'
 // Overview
 // Converting arrays to objects and objects to array
+const zoo = {
+  animals: {
+    lion: {
+      makesNoise: () => {
+        return 'ROAR'
+      },
+    },
+    giraffe: {
+      makeNoise: null,
+    },
+    monkey: {
+      makesNoise: () => {
+        return 'EEE EEE EEE'
+      },
+    },
+    snake: {
+      makesNoise: () => {
+        return 'SSSSSSSS'
+      },
+    },
+  },
+}
 
 const animals = {
   lion: {
@@ -26,10 +49,10 @@ const animals = {
 // HINT: https://reactgo.com/convert-object-to-array-javascript/
 
 const convertObjectToArray = (obj) => {
-  // FILL IN FUNCTION
+  Object.entries(obj)
 }
 
-console.log(convertObjectToArray(animals))
+convertObjectToArray(zoo)
 
 const convertedAnimalsArray = [
   {

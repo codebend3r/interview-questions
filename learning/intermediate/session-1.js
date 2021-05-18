@@ -39,10 +39,11 @@ const zoo = [
 // Q1
 // loop through the {zoo} array and console log out the value of the {name} property
 
-zoo.forEach(({ name }) =>
-  console.log('found you ' + name + ". Now you're dead meat")
-)
+zoo.forEach(({ name }) => console.log(`aha! found you ${name}.`))
 
 // Q2
 // loop through the {zoo} array and console log the value of the {makeNoise} function IF IT EXISTS
-zoo.forEach(({ makesNoise }) => typeof makesNoise === 'function' && makeNoise())
+zoo.forEach(
+  ({ makesNoise }) =>
+    typeof makesNoise === 'function' && console.log(makesNoise())
+)

@@ -2,7 +2,9 @@
 // The {zoo} object contains one property named {animals} which is another object
 // This is called a nested object (an object within an object)
 
-const defaultMakeNoise = () => 'squeeeek'
+const defaultMakeNoise = () => {
+  return 'squeeeek'
+}
 
 const zoo = {
   animals: {
@@ -29,7 +31,10 @@ const zoo = {
 
 // Q1
 // how do you call the {makeNoise} function in the {lion} object?
-console.log(zoo.animals.lion.makesNoise())
+const { lion, giraffe, monkey, snake } = zoo.animals
+
+// THIS IS THE CALL
+lion.makesNoise()
 
 // Q2
 // make a function that takes in an animal object (lion, giraffe, monkey, snake)
@@ -41,12 +46,10 @@ console.log(zoo.animals.lion.makesNoise())
 // Please type out the code below.
 
 const doesAnimalMakeNoise = ({ makesNoise }) => {
-  typeof makesNoise !== 'function'
-    ? console.log(makeNoise)
-    : console.log(makesNoise())
+  makesNoise === makesNoise && typeof makesNoise === 'function'
+    ? makesNoise()
+    : defaultMakeNoise()
 }
-
-const { lion, giraffe, monkey, snake } = zoo.animals
 
 doesAnimalMakeNoise(lion) // should return 'ROAR'
 doesAnimalMakeNoise(giraffe) // should return 'squeeeek'
