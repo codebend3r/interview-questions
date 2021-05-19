@@ -22,6 +22,7 @@ const zoo = {
       },
     },
     snake: {
+      color: red
       makesNoise: () => {
         return 'SSSSSSSS'
       },
@@ -45,7 +46,7 @@ lion.makesNoise()
 //////////////////////////////////////////////////////
 // Please type out the code below.
 
-const doesAnimalMakeNoise = ({ makesNoise }) => {
+const doesAnimalMakeNoise = ({ makesNoise, color }) => {
   makesNoise === makesNoise && typeof makesNoise === 'function'
     ? makesNoise()
     : defaultMakeNoise()
