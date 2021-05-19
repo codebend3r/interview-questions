@@ -49,10 +49,11 @@ const animals = {
 // HINT: https://reactgo.com/convert-object-to-array-javascript/
 
 const convertObjectToArray = (obj) => {
-  Object.entries(obj)
+  return Object.entries(obj)
 }
 
-convertObjectToArray(zoo)
+var conversion = convertObjectToArray(zoo)
+// console.log(conversion)
 
 const convertedAnimalsArray = [
   {

@@ -13,6 +13,12 @@
 //////////////////////////////////////////////////////
 
 // Q2. show an example of a short-circuit statement (if)
+var one = 1
+var two = 30
+var three = 'they are not equal'
+var four = 'this is the forth var'
+console.log(three) && one !== two
+
 
 // A2.
 
@@ -21,4 +27,5 @@
 
 // Q3. show an example of a ternary expression (if/else)
 
-// A4.
+// A3.
+console.log('this is a ternary statement') ? three === four : four = 5
