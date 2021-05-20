@@ -49,17 +49,11 @@ const animals = {
 // HINT: https://reactgo.com/convert-object-to-array-javascript/
 
 const convertObjectToArray = (obj) => {
-  var zooConversion = Object.entries(obj.animals)
-  // var animalConversion = Object.fromEntries(obj.animals)
-  var zooValues = Object.values(zooConversion)
-  // console.log(zooValues)
-  var looping = zooValues.forEach(([]) => {
-    console.log(Object.fromEntries(zooValues))
-    // console.log('not quite there yet')
-  })
+  const [key, value] = Object.entries(obj)
+  Object.entries(obj).map((key, value) => {})
 }
 
-console.log(convertObjectToArray(zoo))
+console.log(convertObjectToArray(animals))
 
 const convertedAnimalsArray = [
   {
