@@ -6,28 +6,28 @@
 
 const zoo = [
   {
-    name: "lion",
+    name: 'lion',
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   {
-    name: "giraffe",
+    name: 'giraffe',
     makesNoise: null,
   },
   {
-    name: "snake",
+    name: 'snake',
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
   {
-    name: "monkey",
+    name: 'monkey',
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
-];
+]
 
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////

@@ -21,4 +21,4 @@
 
 // Q3. show an example of a ternary expression (if/else)
 
-// A4.
+// A3.

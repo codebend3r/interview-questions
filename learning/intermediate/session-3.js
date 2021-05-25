@@ -1,10 +1,10 @@
 // Overview
-// Converting arrays to objects and objects to array
 
+// Converting arrays to objects and objects to array
 const animals = {
   lion: {
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   giraffe: {
@@ -12,44 +12,45 @@ const animals = {
   },
   monkey: {
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
   snake: {
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
-};
+}
 
-// Q1. convert the zoo object to an array, it should look like this
+// Q1. convert the {animals} object to an array, it should look like this {convertedAnimalsArray} (look at that variable)
 // HINT: https://reactgo.com/convert-object-to-array-javascript/
+const convertObjectToArray = () => {}
 
-const convertObjectToArray = (obj) => {};
+console.log('convertedAnimalsArray:', convertedAnimalsArray)
 
-console.log(convertObjectToArray(animals));
-
+// this is for reference only
+// the object converted to array should look like this
 const convertedAnimalsArray = [
   {
-    name: "lion",
+    name: 'lion',
     makesNoise: () => {
-      return "ROAR";
+      return 'ROAR'
     },
   },
   {
-    name: "giraffe",
+    name: 'giraffe',
     makesNoise: null,
   },
   {
-    name: "snake",
+    name: 'snake',
     makesNoise: () => {
-      return "SSSSSSSS";
+      return 'SSSSSSSS'
     },
   },
   {
-    name: "monkey",
+    name: 'monkey',
     makesNoise: () => {
-      return "EEE EEE EEE";
+      return 'EEE EEE EEE'
     },
   },
-];
+]
