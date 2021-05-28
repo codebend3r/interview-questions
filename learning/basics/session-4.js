@@ -1,27 +1,27 @@
 const sayHello = () => {
-  console.log("hello");
-};
+  console.log('hello')
+}
 
-const abyss = () => {};
+const abyss = () => {}
 
-const somethingElse = null;
+const somethingElse = null
 
-const mystery = somethingElse;
+const mystery = somethingElse
 
 if (sayHello) {
-  console.log("A");
-  sayHello();
-  console.log("B");
+  console.log('A')
+  sayHello()
+  console.log('B')
 }
 
 if (abyss) {
-  console.log("C");
-  abyss();
-  console.log("D");
+  console.log('C')
+  abyss()
+  console.log('D')
 }
 
 if (mystery) {
-  console.log("E");
+  console.log('E')
 }
 
 // Q1
@@ -29,5 +29,3 @@ if (mystery) {
 
 // Q2
 // looking at all the console logs, what will be the order of the output?
-// EXAMPLE:
-// A, B, C, D, E
