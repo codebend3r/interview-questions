@@ -1,7 +1,7 @@
 // Overview
 
 // checking an object with inconsistent data
-
+// mario
 const person1 = {
   name: 'Ralph',
   toastMessage: 'cheers mate!',
@@ -45,8 +45,24 @@ const person8 = null
 // IF they CAN drink then you will console log out there {toastMessage} AND THEN return TRUE
 // IF they can NOT drink, do nothing and return FALSE
 // keep in mind that it's POSSIBLE for the object to be empty or undefined, and therefore the properties {age} and {toastMessage} may NOT be defined
-function canPersonDrink() {
+function canPersonDrink(person) {
   // fill in the function here
+
+  const checkAge = person.age
+  const checkToastMsg = person.toastMessage
+  const validateAge = () => {
+    checkAge >= 21 && console.log(checkToastMsg)
+    return true
+  }
+
+  const falseReturn = () => {
+    return false
+  }
+
+  typeof person === 'object' && checkAge
+  checkAge === true && checkToastMsg
+  checkAge === true && checkToastMsg === true && validateAge
+  validateAge === false && falseReturn
 }
 
 // examples on how the function should be called
