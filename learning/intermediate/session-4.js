@@ -47,22 +47,16 @@ const person8 = null
 // keep in mind that it's POSSIBLE for the object to be empty or undefined, and therefore the properties {age} and {toastMessage} may NOT be defined
 function canPersonDrink(person) {
   // fill in the function here
-
-  const checkAge = person.age
-  const checkToastMsg = person.toastMessage
-  const validateAge = () => {
-    checkAge >= 21 && console.log(checkToastMsg)
-    return true
+  if (!!person.age && !!person.toastMessage) {
+    var personAge = person.age
+    var toastMessage = person.toastMessage
   }
-
-  const falseReturn = () => {
+  if (personAge >= 21) {
+    console.log(toastMessage)
+    return true
+  } else {
     return false
   }
-
-  typeof person === 'object' && checkAge
-  checkAge === true && checkToastMsg
-  checkAge === true && checkToastMsg === true && validateAge
-  validateAge === false && falseReturn
 }
 
 // examples on how the function should be called
@@ -73,3 +67,17 @@ canPersonDrink(person4)
 canPersonDrink(person5)
 canPersonDrink(person6)
 canPersonDrink(person7)
+// canPersonDrink(person8)
+
+// !! is the double bang and means is valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is valid
+// !! means is Valid
+// !! means is Valid
