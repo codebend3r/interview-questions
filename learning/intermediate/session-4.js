@@ -1,7 +1,7 @@
 // Overview
 
 // checking an object with inconsistent data
-
+// mario
 const person1 = {
   name: 'Ralph',
   toastMessage: 'cheers mate!',
@@ -45,8 +45,18 @@ const person8 = null
 // IF they CAN drink then you will console log out there {toastMessage} AND THEN return TRUE
 // IF they can NOT drink, do nothing and return FALSE
 // keep in mind that it's POSSIBLE for the object to be empty or undefined, and therefore the properties {age} and {toastMessage} may NOT be defined
-function canPersonDrink() {
+function canPersonDrink(person) {
   // fill in the function here
+  if (!!person.age && !!person.toastMessage) {
+    var personAge = person.age
+    var toastMessage = person.toastMessage
+  }
+  if (personAge >= 21) {
+    console.log(toastMessage)
+    return true
+  } else {
+    return false
+  }
 }
 
 // examples on how the function should be called
@@ -57,3 +67,17 @@ canPersonDrink(person4)
 canPersonDrink(person5)
 canPersonDrink(person6)
 canPersonDrink(person7)
+// canPersonDrink(person8)
+
+// !! is the double bang and means is valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is Valid
+// !! means is valid
+// !! means is Valid
+// !! means is Valid
